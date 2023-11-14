@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Noto+Serif+Vithkuqi:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chonburi&display=swap");
+
+
+
+
+.navbar {
+    position: relative; 
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #363636; /* Couleur de fond pour la navbar */
+    padding: 10px 20px;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+    
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.welcome {
+    font-size: 18px;
+    color: #555;
+    margin: 0 20px;
+}
+
+.profile-image img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid #ccc;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #363636;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    grid-template-rows: auto;
+    grid-column-gap: 35px;
+    grid-row-gap: 0px; 
+    margin-top: 100px;
+    
+}
+
+.card {
+    
+    margin: 50px auto;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+    
+}
+
+.profile-header {
+    text-align: center;
+    padding: 10px;
+}
+
+.profile-header h1 {
+    margin: 0;
+    color: #444;
+    font-weight: 400;
+}
+
+.profile-header img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 10px;
+}
+
+.profile-info p {
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+form {
+    margin: 20px 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.imgprofil{
+
+}
+
+
+.btn__content a{
+    text-decoration: none;
+    color: black;
+}

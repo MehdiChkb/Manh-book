@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/test.css">
+    <link rel="stylesheet" href="./assets/Style_Button_Client_Interface.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <a href="./index.html"> <div class="logo">Manh'Book</div></a>
+           
+            <div class="welcome">Bienvenue, <?php echo $username; ?></div>
+            <div class="profile">
+                <div class="profile-image">
+                    <a href="" class="profillink"><img src="./image/2c022c27ab2cb1af7fa06200f7794284.jpg" alt="Image de profil"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="grid">
+    <div class="card">
+
+        <div class="profile-header">
+            <h1>Profil utilisateur</h1>
+            
+        </div>
+    
+        <div class="profile-info">
+            <p>Nom d'utilisateur : <?php echo $username; ?></p>
+            <p>Email : <?php echo $email; ?></p>
+        </div> 
+    
+        <h2>Vous souhaitez modifier vos informations?</h2>
+        <form action="http://connexion/modify_profil/modifier_info.php" method="post">
+            <label for="new_email">Email :</label>
+            <input type="email" name="new_email" id="new_email" required   placeholder="Entrez votre nouvel email"><br>
+    
+            <label for="new_username">Nom d'utilisateur :</label>
+            <input type="text" name="new_username" id="new_username" required   placeholder="Entrez votre nouveau nom d'utilisateur"><br>
+    
+            <label for="new_password">Mot de passe :</label>
+            <input type="password" name="new_password" id="new_password" required   placeholder="Entrez votre nouveau mot de passe"><br>
+    
+            <button type="submit" value="Mettre à jour" class="btn">
+                <span class="btn__inner">
+                  <span class="btn__slide"></span>
+                  <span class="btn__content">Mettre à jour</span>
+                </span>
+              </button>
+        </form>
+    
+        <h2>Vous souhaitez modifier votre image de profil ?</h2>
+        <form action="http://connexion/modify_profil/modifier_image_profil.php" method="post" enctype="multipart/form-data">
+            <label for="profile_image">Votre image de profil actuelle : </label>
+            <img src="./image/AFTER10CHOPPING.webp" class="imgprofil" alt="Image de profil">
+            <input type="file" name="profile_image" id="profile_image" >
+            <button type="submit" value="Mettre à jour" class="btn">
+                <span class="btn__inner">
+                  <span class="btn__slide"></span>
+                  <span class="btn__content">Télécharger</span>
+                </span>
+            </button>
+            
+        </form>
+    
+    </div>
+    </div>
+    <button type="submit" value="Télécharger" class="btn">
+        <span class="btn__inner">
+          <span class="btn__slide"></span>
+          <span class="btn__content"><a href="http://connexion/interface/client_interface.php">Retour vers l'interface client</a></span>
+        </span>
+      </button>
+    
+</body>
+</html>

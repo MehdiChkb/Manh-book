@@ -1,0 +1,49 @@
+@media screen and (max-width: 960px) {
+    
+    .test{
+        display: block;
+     }
+     .sectionweb{
+        margin-right: 0px;
+     }
+     .block{
+        margin-bottom: 50px;
+     }
+  }
+
+
+
+
+@media (max-width: 768px) {
+    .sectionweb {
+        grid-template-columns: repeat(2, 1fr); /* 2 colonnes au lieu de 4 */
+        grid-template-rows: repeat(6, 1fr); /* 6 lignes au lieu de 3 */
+    }
+
+    .webtoon.card {
+        width: 100%; /* La carte prendra 100% de la largeur */
+        margin-bottom: 20px; /* Espacement entre les cartes */
+    }
+     .test{
+        display: block;
+     }
+     .block{
+        margin-bottom: 50px;
+     }
+
+     .sectionweb{
+        margin-right: 0px;
+     }
+    /* Ajoute d'autres ajustements ici si nécessaire */
+}
+
+@media (max-width: 460px) {
+
+    .sectionweb{
+        margin-right: 0px;
+     }
+
+     .titleweb{
+        text-align: center;
+     }
+}
